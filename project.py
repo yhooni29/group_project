@@ -5,3 +5,4 @@ class SubwayLine9:
     def line(self):
         pass
         
+print('hello')
