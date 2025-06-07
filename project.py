@@ -100,6 +100,7 @@ class Express_9(SubwayLine9):
                 print('출발지가 9호선급행에 존재하지 않는 역입니다.')
         else:
             print('도착지가 9호선급행에 존재하지 않는 역입니다.')
+leezea=Normal_9('line_9','normal')
 
 Dongjak_station = ["달마사", "중앙빌리지.동부센트레빌", "은로초등학교",
     "중대부속초등학교", "중앙대병원후문.흑석시장", "중앙대병원", "중앙대정문",
