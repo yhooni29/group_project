@@ -6,4 +6,3 @@ class SubwayLine9:
         pass
         
 print('hello')
-print('')

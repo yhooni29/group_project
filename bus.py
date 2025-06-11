@@ -1,3 +1,4 @@
+
 Dongjak_station = ["달마사", "중앙빌리지.동부센트레빌", "은로초등학교",
     "중대부속초등학교", "중앙대병원후문.흑석시장", "중앙대병원", "중앙대정문",
     "중앙대중문", "중앙대후문", "이화약국", "동작상도국주도서관", "상도터널상도동",
@@ -104,14 +105,20 @@ def transfer():
             messages=messages
         )
         print(completion.choices[0].message.content)
-        
-while True:
-    question = int(input('동작 01 안내 서비스입니다. 원하는 정보의 번호를 선택하세요.\n1.동작01 노선도\n2.목적지까지 걸리는 시간 및 남은 정류장 \n3.첫차 및 막차 시간\n4.지하철로 환승가능한 정류장'))
-    if question == 1:
-       print('-'.join(Dongjak_station))
-    elif question == 2:
-        destionation()
-    elif question == 3:
-        time()        
-    elif question == 4:
-        transfer()
+
+
+choice = int(input('중앙대학교 근처 교통 안내 서비스입니다. 원하는 정보의 번호를 선택하세요\n1.9호선 지하철 안내\n2.동작01 버스 안내'))
+if choice == 1:
+# 지하철 안내하는 함수
+   print('hello')                     
+elif choice == 2:                                                                             # 원하는 서비스 선택
+    while True:
+        question = int(input('동작 01 안내 서비스입니다. 원하는 정보의 번호를 선택하세요.\n1.동작01 노선도\n2.목적지까지 걸리는 시간 및 남은 정류장 \n3.첫차 및 막차 시간\n4.지하철로 환승가능한 정류장'))
+        if question == 1:
+           print('-'.join(Dongjak_station))
+        elif question == 2:
+            destionation()
+        elif question == 3:
+            time()        
+        elif question == 4:
+            transfer()
