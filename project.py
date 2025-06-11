@@ -169,7 +169,7 @@ def destionation():
                                                                                       #목적지까지 걸리는 시간 및 남은 정류장
     client = OpenAI(
         base_url="https://openrouter.ai/api/v1",
-        api_key="<OPENROUTER KEY>",
+        api_key="<OPEN ROUTER KEY>",
     )
 
     messages = [
@@ -202,7 +202,7 @@ def time():
                                                                                       #첫차 및 막차 시간
     client = OpenAI(
         base_url="https://openrouter.ai/api/v1",
-        api_key="<key>"
+        api_key="<OPEN ROUTER KEY>"
     )
 
     messages = [
@@ -234,7 +234,7 @@ def transfer():
                                                                                       #지하철로 환승가능한 정류장
     client = OpenAI(
         base_url="https://openrouter.ai/api/v1",
-        api_key="<OPENROUTER KEY>",
+        api_key="<OPEN ROUTER KEY>",
     )
 
     messages = [
@@ -272,6 +272,7 @@ def busnavigate():
            time()        
        elif question == 4:
            transfer()
+       break
 
 
 while True:
