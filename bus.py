@@ -105,7 +105,7 @@ def transfer():
             messages=messages
         )
         print(completion.choices[0].message.content)
-
+        break
 
 choice = int(input('중앙대학교 근처 교통 안내 서비스입니다. 원하는 정보의 번호를 선택하세요\n1.9호선 지하철 안내\n2.동작01 버스 안내'))
 if choice == 1:
